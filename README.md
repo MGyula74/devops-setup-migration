@@ -1,6 +1,6 @@
-## sample backlog panel ##
+## devops setup migration ##
 
-Sample backlog panel extension using Typescript and React. 
+Azure DevOps Setup Migration 
 
 ### Structure ###
 
