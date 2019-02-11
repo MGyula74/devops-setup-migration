@@ -1,0 +1,85 @@
+{
+    "manifestVersion": 1,
+    "id": "azure-devops-migration-extension-2",
+    "version": "1.0.14",
+    "name": "Azure DevOps Migration Tool-2",
+    "scopes": [ "vso.work" ],
+    "description": "This extension allows backup and migration of Azure Devops organization settings.",
+    "publisher": "GyulaMolnar",
+    "public": false,
+    "categories": ["Azure Repos"],
+    "icons": {
+        "default": "images/logo.png"
+    },
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "tags": [
+        "Sample"
+    ],
+    "content": {
+        "details": {
+            "path": "details.md"
+        }
+    },
+    "links": {
+        "learn": {
+            "uri": "https://github.com/MGyula74/devops-setup-migration"
+        },
+        "issues": {
+            "uri": "https://github.com/MGyula74/devops-setup-migration/issues"
+        }
+    },
+    "branding": {
+        "color": "rgb(220, 235, 252)",
+        "theme": "light"
+    },
+    "files": [
+        {
+            "path": "images",
+            "addressable": true
+        },
+        {
+            "path": "css",
+            "addressable": true
+        },
+        {
+            "path": "dist",
+            "addressable": true,
+            "packagePath": "scripts"
+        },
+        {
+            "path": "index.html",
+            "addressable": true
+        },
+        {
+            "path": "node_modules/vss-web-extension-sdk/lib",
+            "addressable": true,
+            "packagePath": "lib"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "AzureDevOpsMigration",
+            "type": "ms.vss-web.hub",
+            "description": "Allows backup and migration of Azure Devops organization settings.",
+            "targets": [
+                "ms.vss-code-web.code-hub-group"
+            ],
+            "properties": {
+                "title": "DevOps Setup Migration",
+                "name": "DevOps Setup Migration",
+                "uri": "index.html",
+                "registeredObjectId": "migrationToolObject",
+                "iconAsset": "GyulaMolnar.azure-devops-migration-extension-2/images/logo-2.png",
+                "_sharedData": {
+                    "assets": [
+                        "GyulaMolnar.azure-devops-migration-extension-2/images/logo-2.png"
+                    ]
+                }
+            }
+        }
+    ]
+}
